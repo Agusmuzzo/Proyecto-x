@@ -172,7 +172,7 @@ footer{
 
 /* MQ index-incio */
 
-@media (max-width: 320px){
+@media (max-width: 300px){
 
     .contenedor-home{
         flex-direction: column;
@@ -205,7 +205,7 @@ footer{
 
 /* MQ TOUR */
 
-@media (max-width: 550px){
+@media (max-width: 480px){
     
     .contenedor-conciertos{
         flex-direction: column;
