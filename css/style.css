@@ -81,11 +81,10 @@ h1{
     }
 
 .imagen-tour{
-
+    
 margin-left: 40px;
 width: 840px;
 }
-
 
 
 /* css discografia */
@@ -182,7 +181,6 @@ footer{
 
     .texto-home{
       text-align: justify;
-
     }
 
     .contenedor-texto{
@@ -197,7 +195,7 @@ footer{
         margin-top: 20px;
         margin-bottom: 35px;
     }
-    
+
     .contenedor-imagen{
         justify-content: center;
     }
@@ -209,5 +207,39 @@ footer{
     
     .contenedor-conciertos{
         flex-direction: column;
+    }
+
+    .contenedor-fechas{
+        background-color:#101010;
+        font-size: 20px;
+        flex-direction: column; 
+        display: flex;
+        margin: 20px;
+    }
+
+    body div p{
+        width: 320px;
+        
+    }
+
+    body div .ciudades{
+        text-align: center;
+    }
+
+    body div .fechas{
+        text-align: center;
+    }
+
+    body div a{
+        background-color: #17A2B8;
+        text-align: center;
+        padding: 0.4rem 0.8rem;
+        border-radius: 10px;
+        text-decoration: none;
+        
+    }
+
+    .proximas-fechas{
+        justify-content: center;
     }
 }
