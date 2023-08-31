@@ -1,245 +1,103 @@
-body{
+/* comentario en sass y css */
+.botontour {
+  height: 50px;
+  width: 140px;
+  background-color: #0DCAF0;
+  border-style: none;
+  border-radius: 9px;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .botontour a {
+    text-decoration: none;
+    color: white; }
 
-    min-height: 100vh;
-}
-
-
-/* Home */
-
-.contenedor-home{
-
-    display: flex;
-    background-color:#101010;
-}
-
-/* contenedor del index */
-
-.contenedor-texto{
-
+/* Index */
+body .contenedor-home {
+  display: flex;
+  background-color: #101010; }
+  body .contenedor-home .contenedor-texto {
     display: flex;
     flex-direction: column;
-    width:50%;
+    width: 50%;
     font-size: 25px;
     text-align: justify;
     margin-right: 30px;
+    color: white; }
+  body .contenedor-home .titulo-home {
     color: white;
-}
+    font-size: 40px;
+    margin: 4;
+    text-align: center; }
 
-a{
+body .contenedor-imagen {
+  display: flex;
+  justify-content: end; }
+  body .contenedor-imagen .imagen-home {
+    width: 75%; }
 
-    text-decoration: none;
-    color: #3883DE;
-}
+/* tour */
+body .contenedor-conciertos {
+  display: flex;
+  background-color: #101010; }
 
-/* imagen inicio */
-
-.imagen-home{
-        width: 75%;
-}
-
-.contenedor-imagen{
-        display: flex;
-        justify-content: end;
-}
-
-/* contenedor texto */
-
-h1{
-
-    color: #3883DE;
-    font-size: 60px;
-    margin: 0;
-    text-align: center;
-}
-
-/* contenedor de texto Tour */
-
-
-.contenedor-conciertos{
-
-    display: flex;
-    background-color:#101010
-    }
-
-.proximas-fechas{
-
+body .contenedor-fechas {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(7, 120px);
+  margin-left: 20px;
+  height: fit-content;
+  font-size: 30px;
+  justify-items: center;
+  color: white;
+  background-color: #101010;
+  margin-top: 30px; }
+  body .contenedor-fechas .proximas-fechas {
     grid-column: 1/4;
-}
+    margin-top: 7px; }
 
-.contenedor-fechas{
+/* Discografia */
+body .contenedor-canciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #101010; }
 
-    display: grid;
-    grid-template-columns:  repeat(3, 300px);
-    grid-template-rows: repeat(7,120px);
-    margin-left: 20px;
-    height: fit-content;
-    font-size: 30px;
-    justify-items: center;   
-    align-items: center;
-    color: white;
-    background-color:#101010
-    }
-
-.imagen-tour{
-    
-margin-left: 40px;
-width: 840px;
-}
-
-
-/* css discografia */
-
-
-.contenedor-canciones{
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: #101010;
-
-}
-
-.texto-canciones{
-
-    font-size: 22px;
-    background-color: #101010;
-    color: white;
-}
-
+body .contenedor-textocanciones {
+  font-size: 22px;
+  background-color: #101010;
+  color: white; }
 
 /* Galeria */
-
-.contenedor-galeria{
-    background-color: #101010;
-}
-
-.videos-galeria{
+body .contenedor-galeria {
+  background-color: #101010; }
+  body .contenedor-galeria .videos-galeria {
     display: grid;
-    grid-template-columns: repeat(3,32%);
+    grid-template-columns: repeat(3, 32%);
     grid-template-rows: repeat(2, 50%);
-    grid-gap: 30px;
-}
-
-.fotos-galeria{
-
+    grid-gap: 30px; }
+  body .contenedor-galeria .fotos-galeria {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-}
+    grid-template-columns: repeat(3, 33%); }
+  body .contenedor-galeria h2 {
+    color: white;
+    margin-top: 30px;
+    font-size: 50px; }
 
-
-/* Footer */
-
-
-footer{
-
-    text-align: center;
-    font-size: 30px;
-    background-color: #17A2B8;
-    bottom: 0;
-    position: relative;
-}
-
-.youtube{
-    color: red;
-    
-}
-
-.youtube:hover{
-
-    color: rgb(170, 28, 28);
-}
-
-.spotify{
-
-    color: green;
-}
-
-.spotify:hover{
-
-    color: rgb(6, 80, 6);
-}
-
-.facebook{
-
-    color: rgb(18, 44, 161);
-}
-
-
-/* MQ CELULAR */
-
-
-/* MQ index-incio */
-
-@media (max-width: 480px){
-
-    .contenedor-home{
-        flex-direction: column;
-        background-color:#101010;
-        align-items: center;
-    }
-
-    .texto-home{
-      text-align: justify;
-    }
-
-    .contenedor-texto{
-      width: 460px;
-      align-items: center;
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-
-    .titulo-home{
-        font-size: 70px;
-        margin-top: 20px;
-        margin-bottom: 35px;
-    }
-
-    .contenedor-imagen{
-        justify-content: center;
-    }
-}
-
-/* MQ TOUR */
-
-@media (max-width: 480px){
-    
-    .contenedor-conciertos{
-        flex-direction: column;
-    }
-
-    .contenedor-fechas{
-        background-color:#101010;
-        font-size: 20px;
-        flex-direction: column; 
-        display: flex;
-        margin: 20px;
-    }
-
-    body div p{
-        width: 320px;
-        
-    }
-
-    body div .ciudades{
-        text-align: center;
-    }
-
-    body div .fechas{
-        text-align: center;
-    }
-
-    body div a{
-        background-color: #17A2B8;
-        text-align: center;
-        padding: 0.4rem 0.8rem;
-        border-radius: 10px;
-        text-decoration: none;
-        
-    }
-
-    .proximas-fechas{
-        justify-content: center;
-    }
-}
+footer {
+  text-align: center;
+  font-size: 30px;
+  background-color: #0DCAF0;
+  bottom: 0;
+  position: relative; }
+  footer .youtube {
+    color: red; }
+    footer .youtube:hover {
+      color: #aa1c1c; }
+  footer .spotify {
+    color: green; }
+    footer .spotify:hover {
+      color: #065006; }
+  footer .facebook {
+    color: #122ca1; }
