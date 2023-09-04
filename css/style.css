@@ -7,40 +7,46 @@
   border-radius: 9px;
   display: flex;
   text-align: center;
-  justify-content: center; }
-  .botontour a {
-    text-decoration: none;
-    color: white; }
+  justify-content: center;
+}
+.botontour a {
+  text-decoration: none;
+  color: white;
+}
 
 /* Index */
 body .contenedor-home {
   display: flex;
-  background-color: #101010; }
-  body .contenedor-home .contenedor-texto {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    font-size: 25px;
-    text-align: justify;
-    margin-right: 30px;
-    color: white; }
-  body .contenedor-home .titulo-home {
-    color: white;
-    font-size: 40px;
-    margin: 4;
-    text-align: center; }
-
+  background-color: #101010;
+}
+body .contenedor-home .contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 25px;
+  text-align: justify;
+  margin-right: 30px;
+  color: white;
+}
+body .contenedor-home .titulo-home {
+  color: white;
+  font-size: 40px;
+  margin: 4;
+  text-align: center;
+}
 body .contenedor-imagen {
   display: flex;
-  justify-content: end; }
-  body .contenedor-imagen .imagen-home {
-    width: 75%; }
+  justify-content: end;
+}
+body .contenedor-imagen .imagen-home {
+  width: 75%;
+}
 
 /* tour */
 body .contenedor-conciertos {
   display: flex;
-  background-color: #101010; }
-
+  background-color: #101010;
+}
 body .contenedor-fechas {
   display: grid;
   grid-template-columns: repeat(3, 300px);
@@ -51,10 +57,12 @@ body .contenedor-fechas {
   justify-items: center;
   color: white;
   background-color: #101010;
-  margin-top: 30px; }
-  body .contenedor-fechas .proximas-fechas {
-    grid-column: 1/4;
-    margin-top: 7px; }
+  margin-top: 30px;
+}
+body .contenedor-fechas .proximas-fechas {
+  grid-column: 1/4;
+  margin-top: 7px;
+}
 
 /* Discografia */
 body .contenedor-canciones {
@@ -62,42 +70,55 @@ body .contenedor-canciones {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: #101010; }
-
+  background-color: #101010;
+}
 body .contenedor-textocanciones {
   font-size: 22px;
   background-color: #101010;
-  color: white; }
+  color: white;
+}
 
 /* Galeria */
 body .contenedor-galeria {
-  background-color: #101010; }
-  body .contenedor-galeria .videos-galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    grid-template-rows: repeat(2, 50%);
-    grid-gap: 30px; }
-  body .contenedor-galeria .fotos-galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 33%); }
-  body .contenedor-galeria h2 {
-    color: white;
-    margin-top: 30px;
-    font-size: 50px; }
+  background-color: #101010;
+}
+body .contenedor-galeria .videos-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 30px;
+}
+body .contenedor-galeria .fotos-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+body .contenedor-galeria h2 {
+  color: white;
+  margin-top: 30px;
+  font-size: 50px;
+}
 
 footer {
   text-align: center;
   font-size: 30px;
   background-color: #0DCAF0;
   bottom: 0;
-  position: relative; }
-  footer .youtube {
-    color: red; }
-    footer .youtube:hover {
-      color: #aa1c1c; }
-  footer .spotify {
-    color: green; }
-    footer .spotify:hover {
-      color: #065006; }
-  footer .facebook {
-    color: #122ca1; }
+  position: relative;
+}
+footer .youtube {
+  color: red;
+}
+footer .youtube:hover {
+  color: rgb(170, 28, 28);
+}
+footer .spotify {
+  color: green;
+}
+footer .spotify:hover {
+  color: rgb(6, 80, 6);
+}
+footer .facebook {
+  color: rgb(18, 44, 161);
+}
+
+/*# sourceMappingURL=style.css.map */
