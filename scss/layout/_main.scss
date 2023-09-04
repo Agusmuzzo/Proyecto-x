@@ -1,0 +1,206 @@
+/* index */
+
+
+body{
+    .contenedor-home{
+        display: flex;
+        background-color: $color-principal;
+        .contenedor-texto{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            font-size: 25px;
+            text-align: justify;
+            margin-right: 30px;
+            color: white;   
+        }
+        .titulo-home{
+        color: white;
+        font-size: 40px;
+        margin: 4;
+        text-align: center;
+        font-family: 'Questrial', sans-serif;
+        } 
+        p{
+            font-family: 'Questrial', sans-serif;
+        }  
+    }
+    .contenedor-imagen{
+        display: flex;
+        justify-content: end;
+        .imagen-home{
+        width: 75%;
+        }
+    }
+}
+
+
+
+/* Conciertos */
+
+body{
+    .contenedor-conciertos{
+        display: flex;
+        background-color: $color-principal;
+    }
+    .contenedor-fechas{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(7, 120px);
+        margin-left: 20px;
+        height: fit-content;
+        font-size: 30px;
+        justify-items: center;
+        color: white;
+        background-color: $color-principal;
+        margin-top: 30px;
+        p{
+            font-family: 'Questrial', sans-serif;
+        }
+        .proximas-fechas{
+            grid-column: 1/4;
+            margin-top: 7px;
+            font-family: 'Questrial', sans-serif;
+        }
+    }
+}
+
+
+
+
+/* Discografia */
+
+
+body{
+    .contenedor-canciones{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-principal;
+    width: auto;
+    height: 616px;
+    }
+        h1{
+            @include center;
+            font-family: 'Questrial', sans-serif;
+        }
+        .contenedor-discos{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 40px;
+        }
+        .disco-uno{
+            @include discos;
+        }
+        .disco-dos{
+            @include discos;
+        }
+        .disco-tres{
+            @include discos;
+        }
+        .disco-cuatro{
+            @include discos;
+        }
+    .contenedor-textocanciones{
+    font-size: 18px;
+    background-color: $color-principal;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    }
+}
+
+
+/* Galeria */
+
+body{
+    .contenedor-galeria{
+        background-color: $color-principal;
+            .videos-galeria{
+                display: grid;
+                grid-template-columns: repeat(3,32%);
+                grid-template-rows: repeat(2,50%);
+                grid-gap: 30px;
+            }
+            .fotos-galeria{
+                display: grid;
+                grid-template-columns: repeat(3,32%);
+                gap: 6px;
+            }
+            h1{
+                @include center;
+                font-family: 'Questrial', sans-serif;
+            }
+    }
+}
+
+
+
+/* contacto */
+
+body{
+    .contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-principal;
+    height: 830px;
+    top: 70px;
+    .contenedor-titulo{
+        margin-top: -20px;
+        font-family: 'Questrial', sans-serif;
+    }
+    .contenedor-formularioadentro{
+        display: flex;
+        margin-top: 20px;
+    }
+    .formulario{
+        width: 400px;
+        background-color: $color-nav;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'Questrial', sans-serif;
+        .boton-form{
+            width: 100%;
+            border: none;
+            padding: 12px;
+            margin: 16px 0;
+            background-color: $color-principal;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        a{
+            color: $color-principal;
+            &:hover{
+                color: white;
+            }
+            text-decoration: underline;
+        }
+        p{
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+        h4{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        }
+    .formruso{
+        width: 100%;
+        background-color: $color-nav;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid $color-principal;
+        font-family:'Asap Condensed', sans-serif;
+        font-size: 18px;
+    }
+
+    }
+}
