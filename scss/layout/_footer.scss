@@ -2,8 +2,10 @@ footer{
     text-align: center;
     font-size: 30px;
     background-color: $color-nav;
-    bottom: 0;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
     height:fit-content;
     .youtube{
         color: red;

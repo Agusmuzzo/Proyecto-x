@@ -1,0 +1,34 @@
+/* MQ CELULAR */
+
+
+/* MQ index-incio */
+
+@media (max-width: 480px){
+
+    .contenedor-home{
+        flex-direction: column;
+        background-color:#101010;
+        align-items: center;
+    }
+
+    .texto-home{
+      text-align: justify;
+    }
+
+    .contenedor-texto{
+      width: 460px;
+      align-items: center;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .titulo-home{
+        font-size: 70px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
+    .contenedor-imagen{
+        justify-content: center;
+    }
+}

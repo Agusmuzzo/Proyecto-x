@@ -42,6 +42,7 @@ body{
     .contenedor-conciertos{
         display: flex;
         background-color: $color-principal;
+        height: fit-content;
     }
     .contenedor-fechas{
         display: grid;
@@ -77,7 +78,7 @@ body{
     flex-direction: column;
     background-color: $color-principal;
     width: auto;
-    height: 616px;
+    height: fit-content;
     }
         h1{
             @include center;
@@ -154,7 +155,6 @@ body{
     }
     .contenedor-formularioadentro{
         display: flex;
-        margin-top: 20px;
     }
     .formulario{
         width: 400px;

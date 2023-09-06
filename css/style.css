@@ -3,8 +3,9 @@ footer {
   text-align: center;
   font-size: 30px;
   background-color: #0DCAF0;
-  bottom: 0;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: fit-content;
 }
 footer .youtube {
@@ -63,6 +64,7 @@ body .contenedor-imagen .imagen-home {
 body .contenedor-conciertos {
   display: flex;
   background-color: #101010;
+  height: fit-content;
 }
 body .contenedor-fechas {
   display: grid;
@@ -91,7 +93,7 @@ body .contenedor-canciones {
   flex-direction: column;
   background-color: #101010;
   width: auto;
-  height: 616px;
+  height: fit-content;
 }
 body h1 {
   justify-content: center;
@@ -170,7 +172,6 @@ body .contenedor-formulario .contenedor-titulo {
 }
 body .contenedor-formulario .contenedor-formularioadentro {
   display: flex;
-  margin-top: 20px;
 }
 body .contenedor-formulario .formulario {
   width: 400px;
@@ -216,6 +217,114 @@ body .contenedor-formulario .formruso {
   border: 1px solid #101010;
   font-family: "Asap Condensed", sans-serif;
   font-size: 18px;
+}
+
+/* MQ CELULAR */
+/* MQ index-incio */
+@media (max-width: 480px) {
+  .contenedor-home {
+    flex-direction: column;
+    background-color: #101010;
+    align-items: center;
+  }
+  .texto-home {
+    text-align: justify;
+  }
+  .contenedor-texto {
+    width: 460px;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .titulo-home {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .contenedor-imagen {
+    justify-content: center;
+  }
+}
+/* MQ CONCIERTOS */
+@media (max-width: 480px) {
+  body {
+    height: fit-content;
+    position: relative;
+  }
+  .contenedor-conciertos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 550px;
+  }
+  .contenedor-conciertos .contenedor-fechas {
+    text-align: end;
+    width: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 60px);
+    font-size: 23px;
+  }
+  .contenedor-conciertos .contenedor-fechas h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .contenedor-conciertos .fechas {
+    text-align: end;
+  }
+}
+/* MQ CELULAR CONTACTO */
+@media (max-width: 480px) {
+  .contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-formularioadentro {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-formularioadentro .formulario {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    height: fit-content;
+  }
+  .contenedor-discos {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+  .contenedor-discos .disco-tres {
+    width: 100%;
+    height: 352px;
+  }
+  .contenedor-discos .disco-dos {
+    width: 100%;
+    height: 352px;
+  }
+  .contenedor-discos .disco-uno {
+    width: 100%;
+    height: 352px;
+  }
+  .contenedor-discos .disco-cuatro {
+    width: 100%;
+    height: 352px;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+  .videos-galeria {
+    background-color: red;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 50%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

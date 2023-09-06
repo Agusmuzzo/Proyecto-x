@@ -1,0 +1,31 @@
+/* MQ CONCIERTOS */
+
+@media (max-width: 480px){
+    body{
+        height: fit-content;
+        position: relative;
+    }
+    
+    .contenedor-conciertos{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 550px;
+        .contenedor-fechas{
+            text-align: end;
+            width:fit-content;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(7, 60px);
+            font-size: 23px;
+            h1{
+                font-size: 40px;
+                margin-bottom:30px ;
+            }
+        }
+        .ciudades{
+        }
+        .fechas{
+        text-align: end;
+        }
+    }
+}
