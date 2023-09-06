@@ -1,0 +1,21 @@
+
+/* MQ CELULAR CONTACTO */
+
+@media (max-width: 480px){
+    body{
+    }
+    .contenedor-formulario{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-formularioadentro{
+       display: flex;
+       flex-direction: column;
+       .formulario{
+        width: 100%;
+        margin: 0;
+       }
+        .formulario-imagen{
+        }
+    }
+}

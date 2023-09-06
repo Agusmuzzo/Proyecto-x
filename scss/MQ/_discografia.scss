@@ -1,0 +1,30 @@
+@media (max-width: 480px){
+    body{
+        height: fit-content;
+    }
+    .contenedor-canciones{
+    }
+    .contenedor-discos{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        .disco-tres{
+            width: 100%;
+            height: 352px;
+        }
+        .disco-dos{
+            width: 100%;
+            height: 352px;
+        }
+        .disco-uno{
+            width: 100%;
+            height: 352px;
+        }
+        .disco-cuatro{
+            width: 100%;
+            height: 352px;
+        }
+    }
+    .contenedor-textocanciones{
+    }
+}

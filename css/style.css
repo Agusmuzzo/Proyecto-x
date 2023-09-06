@@ -1,20 +1,34 @@
 /* comentario en sass y css */
-.botontour {
-  height: 50px;
-  width: 140px;
-  background-color: #0DCAF0;
-  border-style: none;
-  border-radius: 9px;
-  display: flex;
+footer {
   text-align: center;
+  font-size: 30px;
+  background-color: #0DCAF0;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  height: fit-content;
 }
-.botontour a {
-  text-decoration: none;
-  color: white;
+footer .youtube {
+  color: red;
+}
+footer .youtube:hover {
+  color: rgb(170, 28, 28);
+}
+footer .spotify {
+  color: green;
+}
+footer .spotify:hover {
+  color: rgb(6, 80, 6);
+}
+footer .facebook {
+  color: rgb(18, 44, 161);
 }
 
-/* Index */
+.navbar {
+  font-family: "Questrial", sans-serif;
+}
+
+/* index */
 body .contenedor-home {
   display: flex;
   background-color: #101010;
@@ -33,6 +47,10 @@ body .contenedor-home .titulo-home {
   font-size: 40px;
   margin: 4;
   text-align: center;
+  font-family: "Questrial", sans-serif;
+}
+body .contenedor-home p {
+  font-family: "Questrial", sans-serif;
 }
 body .contenedor-imagen {
   display: flex;
@@ -42,10 +60,11 @@ body .contenedor-imagen .imagen-home {
   width: 75%;
 }
 
-/* tour */
+/* Conciertos */
 body .contenedor-conciertos {
   display: flex;
   background-color: #101010;
+  height: fit-content;
 }
 body .contenedor-fechas {
   display: grid;
@@ -59,23 +78,59 @@ body .contenedor-fechas {
   background-color: #101010;
   margin-top: 30px;
 }
+body .contenedor-fechas p {
+  font-family: "Questrial", sans-serif;
+}
 body .contenedor-fechas .proximas-fechas {
   grid-column: 1/4;
   margin-top: 7px;
+  font-family: "Questrial", sans-serif;
 }
 
 /* Discografia */
 body .contenedor-canciones {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   background-color: #101010;
+  width: auto;
+  height: fit-content;
+}
+body h1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-top: 30px;
+  font-size: 50px;
+  font-family: "Questrial", sans-serif;
+}
+body .contenedor-discos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 40px;
+}
+body .disco-uno {
+  width: 400px;
+}
+body .disco-dos {
+  width: 400px;
+}
+body .disco-tres {
+  width: 400px;
+}
+body .disco-cuatro {
+  width: 400px;
 }
 body .contenedor-textocanciones {
-  font-size: 22px;
+  font-size: 18px;
   background-color: #101010;
   color: white;
+  font-family: "Questrial", sans-serif;
+  text-align: justify;
+  padding: 12px;
+  margin-bottom: 20px;
 }
 
 /* Galeria */
@@ -90,35 +145,186 @@ body .contenedor-galeria .videos-galeria {
 }
 body .contenedor-galeria .fotos-galeria {
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 32%);
+  gap: 6px;
 }
-body .contenedor-galeria h2 {
+body .contenedor-galeria h1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
   color: white;
   margin-top: 30px;
   font-size: 50px;
+  font-family: "Questrial", sans-serif;
 }
 
-footer {
-  text-align: center;
-  font-size: 30px;
+/* contacto */
+body .contenedor-formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: #101010;
+  height: 830px;
+  top: 70px;
+}
+body .contenedor-formulario .contenedor-titulo {
+  margin-top: -20px;
+  font-family: "Questrial", sans-serif;
+}
+body .contenedor-formulario .contenedor-formularioadentro {
+  display: flex;
+}
+body .contenedor-formulario .formulario {
+  width: 400px;
   background-color: #0DCAF0;
-  bottom: 0;
-  position: relative;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "Questrial", sans-serif;
 }
-footer .youtube {
-  color: red;
+body .contenedor-formulario .formulario .boton-form {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  margin: 16px 0;
+  background-color: #101010;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
 }
-footer .youtube:hover {
-  color: rgb(170, 28, 28);
+body .contenedor-formulario .formulario a {
+  color: #101010;
+  text-decoration: underline;
 }
-footer .spotify {
-  color: green;
+body .contenedor-formulario .formulario a:hover {
+  color: white;
 }
-footer .spotify:hover {
-  color: rgb(6, 80, 6);
+body .contenedor-formulario .formulario p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
 }
-footer .facebook {
-  color: rgb(18, 44, 161);
+body .contenedor-formulario .formulario h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+body .contenedor-formulario .formruso {
+  width: 100%;
+  background-color: #0DCAF0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #101010;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 18px;
+}
+
+/* MQ CELULAR */
+/* MQ index-incio */
+@media (max-width: 480px) {
+  .contenedor-home {
+    flex-direction: column;
+    background-color: #101010;
+    align-items: center;
+  }
+  .texto-home {
+    text-align: justify;
+  }
+  .contenedor-texto {
+    width: 460px;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .titulo-home {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .contenedor-imagen {
+    justify-content: center;
+  }
+}
+/* MQ CONCIERTOS */
+@media (max-width: 480px) {
+  body {
+    height: fit-content;
+    position: relative;
+  }
+  .contenedor-conciertos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 550px;
+  }
+  .contenedor-conciertos .contenedor-fechas {
+    text-align: end;
+    width: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 60px);
+    font-size: 23px;
+  }
+  .contenedor-conciertos .contenedor-fechas h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .contenedor-conciertos .fechas {
+    text-align: end;
+  }
+}
+/* MQ CELULAR CONTACTO */
+@media (max-width: 480px) {
+  .contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-formularioadentro {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-formularioadentro .formulario {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    height: fit-content;
+  }
+  .contenedor-discos {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+  .contenedor-discos .disco-tres {
+    width: 100%;
+    height: 352px;
+  }
+  .contenedor-discos .disco-dos {
+    width: 100%;
+    height: 352px;
+  }
+  .contenedor-discos .disco-uno {
+    width: 100%;
+    height: 352px;
+  }
+  .contenedor-discos .disco-cuatro {
+    width: 100%;
+    height: 352px;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+  .videos-galeria {
+    background-color: red;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 50%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
