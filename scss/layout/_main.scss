@@ -95,7 +95,7 @@ body{
             @include discos;
         }
         .disco-dos{
-            @include discos;
+            @include discos ;
         }
         .disco-tres{
             @include discos;
@@ -121,15 +121,25 @@ body{
     .contenedor-galeria{
         background-color: $color-principal;
             .videos-galeria{
-                display: grid;
-                grid-template-columns: repeat(3,32%);
-                grid-template-rows: repeat(2,50%);
-                grid-gap: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
             }
             .fotos-galeria{
-                display: grid;
-                grid-template-columns: repeat(3,32%);
-                gap: 6px;
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+               
+                .foto-uno{
+                    width: 33%;
+                }
+                .foto-dos{
+                    width: 33%;
+                }
+                .foto-tres{
+                    width: 33%;
+                }
             }
             h1{
                 @include center;
@@ -147,7 +157,8 @@ body{
     display: flex;
     flex-direction: column;
     background-color: $color-principal;
-    height: 830px;
+    min-height: 830px;
+    height: fit-content;
     top: 70px;
     .contenedor-titulo{
         margin-top: -20px;
@@ -155,13 +166,18 @@ body{
     }
     .contenedor-formularioadentro{
         display: flex;
+        height: fit-content;
+        justify-content:space-evenly;
     }
+    .div-formulario{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+       }
     .formulario{
         width: 400px;
         background-color: $color-nav;
         padding: 30px;
-        margin: auto;
-        margin-top: 100px;
         border-radius: 4px;
         font-family: 'Questrial', sans-serif;
         .boton-form{
