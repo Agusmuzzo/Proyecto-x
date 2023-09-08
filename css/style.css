@@ -1,4 +1,8 @@
 /* comentario en sass y css */
+body .contenedor-fechas .proximas-fechas {
+  background-color: #101010;
+}
+
 footer {
   text-align: center;
   font-size: 30px;
