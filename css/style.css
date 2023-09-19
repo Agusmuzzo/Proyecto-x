@@ -184,6 +184,7 @@ body .contenedor-galeria .fotos-galeria .foto-tres {
 }
 body .contenedor-galeria h1 {
   font-family: "Questrial", sans-serif;
+  margin-top: 0px;
 }
 
 /* contacto */
