@@ -16,3 +16,21 @@
         }
     }
 }
+
+
+@media (max-width: 1200px) and (min-width: 480px){
+
+    .contenedor-formulario{
+        display: flex; 
+        flex-direction: column;
+    }  
+    .contenedor-formularioadentro{
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        margin-bottom: 30px;
+         .imagen-formulario{
+             width: 100%;
+         } 
+        }     
+}
