@@ -1,3 +1,11 @@
 .navbar{
     font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+    a{
+        color: $color-principal;
+        &:hover{
+            color: white;
+        }
+        text-decoration: none;
+    }
 }

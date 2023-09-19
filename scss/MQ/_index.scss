@@ -20,8 +20,7 @@
 
     .contenedor-texto{
       width: 400px;
-      
-      
+      padding: auto;
     }
 
     .titulo-home{
@@ -34,3 +33,26 @@
         justify-content: center;
     }
 }
+
+
+/* MQ Tablet */
+
+@media (max-width: 1200px) and (min-width: 480px){
+
+    .contenedor-home{
+      display: flex;
+      flex-direction: column;
+      .contenedor-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .contenedor-imagen{
+        justify-content: flex-end;
+      }
+    }
+}
+
+

@@ -26,5 +26,17 @@
         }
     }
     .contenedor-textocanciones{
+        height: fit-content;
+        
     }
+}
+
+
+/* MQ TABLET DISCOGRAFIA */
+
+@media (max-width: 1200px) and (min-width: 480px) {
+    
+    .contenedor-discos{
+        flex-wrap: wrap;
+    }   
 }
