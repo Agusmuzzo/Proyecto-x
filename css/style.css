@@ -161,7 +161,6 @@ body .contenedor-textocanciones p {
 /* Galeria */
 body .contenedor-galeria {
   background-color: #101010;
-  margin-bottom: 30px;
 }
 body .contenedor-galeria .videos-galeria {
   display: flex;
