@@ -38,7 +38,7 @@
 /* MQ Tablet */
 
 @media (max-width: 1200px) and (min-width: 480px){
-
+  body{
     .contenedor-home{
       display: flex;
       flex-direction: column;
@@ -53,6 +53,7 @@
         justify-content: flex-end;
       }
     }
+  }
 }
 
 

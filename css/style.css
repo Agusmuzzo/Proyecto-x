@@ -280,18 +280,18 @@ body .contenedor-formulario .formruso {
 }
 /* MQ Tablet */
 @media (max-width: 1200px) and (min-width: 480px) {
-  .contenedor-home {
+  body .contenedor-home {
     display: flex;
     flex-direction: column;
   }
-  .contenedor-home .contenedor-texto {
+  body .contenedor-home .contenedor-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .contenedor-home .contenedor-imagen {
+  body .contenedor-home .contenedor-imagen {
     justify-content: flex-end;
   }
 }
