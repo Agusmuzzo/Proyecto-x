@@ -1,4 +1,4 @@
-footer{
+footer {
     text-align: center;
     font-size: 30px;
     background-color: $color-nav;
@@ -6,21 +6,26 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 7px;
-  
-    height:fit-content;
-    .youtube{
+
+    height: fit-content;
+
+    .youtube {
         color: red;
-        &:hover{
+
+        &:hover {
             color: rgb(170, 28, 28);
         }
     }
-    .spotify{
+
+    .spotify {
         color: green;
-        &:hover{
-            color:rgb(6, 80, 6) ;
+
+        &:hover {
+            color: rgb(6, 80, 6);
         }
     }
-    .facebook{
-        color:rgb(18, 44, 161) ;
+
+    .facebook {
+        color: rgb(18, 44, 161);
     }
 }

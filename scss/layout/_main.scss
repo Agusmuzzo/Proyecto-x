@@ -1,36 +1,41 @@
 /* index */
 
 
-body{
-    .contenedor-home{
+body {
+    .contenedor-home {
         display: flex;
         background-color: $color-principal;
-        .contenedor-texto{
+
+        .contenedor-texto {
             display: flex;
             flex-direction: column;
             width: 50%;
             font-size: 25px;
             text-align: justify;
-            color: white; 
-            padding: 30px;  
+            color: white;
+            padding: 30px;
         }
-        .titulo-home{
-        color: white;
-        font-size: 40px;
-        margin: 4;
-        text-align: center;
-        font-family: 'Questrial', sans-serif;
-        } 
-        p{
+
+        .titulo-home {
+            color: white;
+            font-size: 40px;
+            margin: 4;
+            text-align: center;
             font-family: 'Questrial', sans-serif;
-        }  
+        }
+
+        p {
+            font-family: 'Questrial', sans-serif;
+        }
     }
-    .contenedor-imagen{
+
+    .contenedor-imagen {
         display: flex;
         justify-content: end;
-        .imagen-home{
-        width: 88%;
-        margin: 30px;
+
+        .imagen-home {
+            width: 88%;
+            margin: 30px;
         }
     }
 }
@@ -39,13 +44,14 @@ body{
 
 /* Conciertos */
 
-body{
-    .contenedor-conciertos{
+body {
+    .contenedor-conciertos {
         display: flex;
         background-color: $color-principal;
         height: fit-content;
     }
-    .contenedor-fechas{
+
+    .contenedor-fechas {
         display: grid;
         grid-template-columns: repeat(3, 300px);
         grid-template-rows: repeat(7, 120px);
@@ -56,20 +62,25 @@ body{
         color: white;
         background-color: $color-principal;
         margin-top: 30px;
-        p{
+
+        p {
             font-family: 'Questrial', sans-serif;
         }
-        .proximas-fechas{
+
+        .proximas-fechas {
             grid-column: 1/4;
             margin-top: 7px;
             @extend %colores;
-            font-family:'Questrial', sans-serif;
+            font-family: 'Questrial', sans-serif;
         }
-        a{
+
+        a {
             color: $color-nav;
-            &:hover{
+
+            &:hover {
                 color: white;
             }
+
             text-decoration: none;
         }
     }
@@ -81,83 +92,96 @@ body{
 /* Discografia */
 
 
-body{
-    .contenedor-canciones{
-    display: flex;
-    flex-direction: column;
-    background-color: $color-principal;
-    width: auto;
-    height: fit-content;
+body {
+    .contenedor-canciones {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-principal;
+        width: auto;
+        height: fit-content;
     }
-        h1{
-            @include center;
-            font-family: 'Questrial', sans-serif;
-        }
-        .contenedor-discos{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 40px;
-        }
-        .disco-uno{
-            @include discos;
-        }
-        .disco-dos{
-            @include discos ;
-        }
-        .disco-tres{
-            @include discos;
-        }
-        .disco-cuatro{
-            @include discos;
-        }
-    .contenedor-textocanciones{
-    font-size: 18px;
-    background-color: $color-principal;
-    color: white;
-    font-family: 'Questrial', sans-serif;
-    text-align: justify;
-    padding: 12px;
-    height: fit-content;
-    p{
-        text-align:center;
 
+    h1 {
+        @include center;
+        font-family: 'Questrial', sans-serif;
     }
+
+    .contenedor-discos {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 40px;
+    }
+
+    .disco-uno {
+        @include discos;
+    }
+
+    .disco-dos {
+        @include discos;
+    }
+
+    .disco-tres {
+        @include discos;
+    }
+
+    .disco-cuatro {
+        @include discos;
+    }
+
+    .contenedor-textocanciones {
+        font-size: 18px;
+        background-color: $color-principal;
+        color: white;
+        font-family: 'Questrial', sans-serif;
+        text-align: justify;
+        padding: 12px;
+        height: fit-content;
+
+        p {
+            text-align: center;
+
+        }
     }
 }
 
 
 /* Galeria */
 
-body{
-    .contenedor-galeria{
+body {
+    .contenedor-galeria {
         background-color: $color-principal;
-            .videos-galeria{
-                display: flex;
-                flex-wrap: wrap;
-                gap: 30px;
-                justify-content: center;
+
+        .videos-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .fotos-galeria {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            .foto-uno {
+                width: 33%;
             }
-            .fotos-galeria{
-                display: flex;
-                justify-content: center;
-                margin-top: 30px;
-               
-                .foto-uno{
-                    width: 33%;
-                }
-                .foto-dos{
-                    width: 33%;
-                }
-                .foto-tres{
-                    width: 33%;
-                }
+
+            .foto-dos {
+                width: 33%;
             }
-            h1{
-                font-family: 'Questrial', sans-serif;
-                margin-top: 0px;
+
+            .foto-tres {
+                width: 33%;
             }
+        }
+
+        h1 {
+            font-family: 'Questrial', sans-serif;
+            margin-top: 0px;
+        }
     }
 }
 
@@ -165,76 +189,87 @@ body{
 
 /* contacto */
 
-body{
-    .contenedor-formulario{
-    display: flex;
-    flex-direction: column;
-    background-color: $color-principal;
-    min-height: 830px;
-    height: fit-content;
-    top: 70px;
-    .contenedor-titulo{
-        margin-top: -20px;
-        font-family: 'Questrial', sans-serif;
-    }
-    .contenedor-formularioadentro{
+body {
+    .contenedor-formulario {
         display: flex;
+        flex-direction: column;
+        background-color: $color-principal;
+        min-height: 830px;
         height: fit-content;
-        justify-content:space-evenly;
-    }
-    .div-formulario{
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-       }
-    .formulario{
-        width: 400px;
-        background-color: $color-nav;
-        padding: 30px;
-        border-radius: 4px;
-        font-family: 'Questrial', sans-serif;
-        font-size: 18px;
-        ::placeholder{
-            color: $color-principal;
-            font-weight: 600;
+        top: 70px;
+
+        .contenedor-titulo {
+            margin-top: -20px;
+            font-family: 'Questrial', sans-serif;
         }
-        .boton-form{
-            width: 100%;
-            border: none;
-            padding: 12px;
-            margin: 16px 0;
-            background-color: $color-principal;
-            color: white;
-            border-radius: 5px;
-            font-size: 16px;
+
+        .contenedor-formularioadentro {
+            display: flex;
+            height: fit-content;
+            justify-content: space-evenly;
         }
-        a{
-            color: $color-principal;
-            &:hover{
-                color: white;
+
+        .div-formulario {
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .formulario {
+            width: 400px;
+            background-color: $color-nav;
+            padding: 30px;
+            border-radius: 4px;
+            font-family: 'Questrial', sans-serif;
+            font-size: 18px;
+
+            ::placeholder {
+                color: $color-principal;
+                font-weight: 600;
             }
-            text-decoration: underline;
+
+            .boton-form {
+                width: 100%;
+                border: none;
+                padding: 12px;
+                margin: 16px 0;
+                background-color: $color-principal;
+                color: white;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+            a {
+                color: $color-principal;
+
+                &:hover {
+                    color: white;
+                }
+
+                text-decoration: underline;
+            }
+
+            p {
+                height: 40px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            h4 {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
         }
-        p{
-            height: 40px;
-            text-align: center;
+
+        .formruso {
+            width: 100%;
+            background-color: $color-nav;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid $color-principal;
+            font-family: 'Asap Condensed', sans-serif;
             font-size: 18px;
         }
-        h4{
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
-        }
-    .formruso{
-        width: 100%;
-        background-color: $color-nav;
-        padding: 10px;
-        border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid $color-principal;
-        font-family:'Asap Condensed', sans-serif;
-        font-size: 18px;
-    }
-
     }
 }

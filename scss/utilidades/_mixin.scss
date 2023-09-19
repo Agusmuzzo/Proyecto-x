@@ -1,4 +1,4 @@
-@mixin center{
+@mixin center {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -7,7 +7,6 @@
     font-size: 50px;
 }
 
-@mixin discos{
+@mixin discos {
     width: 400px;
 }
-
