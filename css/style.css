@@ -108,6 +108,13 @@ body .contenedor-fechas .proximas-fechas {
   margin-top: 7px;
   font-family: "Questrial", sans-serif;
 }
+body .contenedor-fechas a {
+  color: #0DCAF0;
+  text-decoration: none;
+}
+body .contenedor-fechas a:hover {
+  color: white;
+}
 
 /* Discografia */
 body .contenedor-canciones {
