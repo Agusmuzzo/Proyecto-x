@@ -269,27 +269,33 @@ body .contenedor-formulario .formruso {
 /* MQ CELULAR */
 /* MQ index-incio */
 @media (max-width: 480px) {
-  .contenedor-home {
+  body .contenedor-home {
     flex-direction: column;
     background-color: #101010;
     align-items: center;
     width: 100%;
   }
-  .texto-home {
+  body .texto-home {
     text-align: center;
     font-size: 20px;
     width: 100%;
+    justify-content: center;
   }
-  .contenedor-texto {
-    width: 400px;
-    padding: auto;
+  body .contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+    padding: 30px;
   }
-  .titulo-home {
+  body .titulo-home {
     font-size: 70px;
     margin-top: 20px;
     margin-bottom: 35px;
   }
-  .contenedor-imagen {
+  body .contenedor-imagen {
     justify-content: center;
   }
 }
